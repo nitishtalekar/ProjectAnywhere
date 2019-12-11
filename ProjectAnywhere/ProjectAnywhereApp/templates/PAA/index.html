@@ -2,12 +2,9 @@
 {% extends 'PAA/base.html'%}
 
 {% block content %}
-<h1>HELLOO WORLD</h1>
+<h1>Home Page</h1>
 
-{% for i in val %}
-<h2>This is Login Page</h2>
+<a href="/login/"><button type="button" name="login">Login</button></a>
 
-{% endfor %}
-
-<a href="/home/">LINKS</a>
+<a href="/signup/"><button type="button" name="signup">Signup</button></a>
 {% endblock content %}

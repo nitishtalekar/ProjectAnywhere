@@ -1,0 +1,18 @@
+{% extends 'PAA/base.html'%}
+
+{% block content %}
+    <h1>HELLOO</h1>
+    <h2>This is Login Page</h2>
+
+    <form method="post">
+      {% csrf_token %}
+
+      {{ form.as_p }}
+
+      <button type="submit" name="login">Login</button>
+
+      {{ data }}
+
+    </form>
+
+{% endblock content %}
