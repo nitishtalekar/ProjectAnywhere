@@ -2,16 +2,19 @@
 
 {% block content %}
     <h1>HELLOO</h1>
-    <h2>This is Login Page</h2>
+    <h2>This is Signup Page</h2>
 
     <form method="post">
       {% csrf_token %}
 
-      {{ form.as_p }}
+      {{ add_project.as_p }}
 
-      <button type="submit" name="login">Login</button>
+      <button type="submit" name="sigup">Sign-up</button>
+
 
     </form>
     {{errors}}
+
+
 
 {% endblock content %}

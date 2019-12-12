@@ -4,7 +4,11 @@
 {% block content %}
 <h1>User Page</h1>
 
-<h2> Welcome {{ udata.1 }}  </h2>
+<h2> Welcome {{ uname }}  </h2>
+
+<a href="/add_project/"><button type="button" name="add_project">Add Project</button></a>
+
+<a href="/status/"><button type="button" name="status">Check Status</button></a>
 
 
 {% endblock content %}
